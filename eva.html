@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сюрпризик</title>
+    <link rel="stylesheet" href="eva.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Выбери ка!</h1>
+        <h2>(Для Жени 0_0)</h2>
+        <select id="cardType">
+            <option value="">--А ну попробуй--</option>
+            <option value="love">Ты?</option>
+            <option value="friendship">Эт я</option>
+            <option value="birthday">Отдохни чуточку</option>
+        </select>
+        <button id="createCard">РАБОТАЕМ?</button>
+        <div id="card" class="card" style="display: none;">
+            <img id="cardImage" src="" alt="Что же там?" style="display: none;">
+        </div>
+        <div id="riddle" style="margin-top: 20px; display: none;">
+            <p>Опа!А тут загадка: Я всегда с тобой, но ты не можешь меня увидеть. Что я?</p>
+            <input type="text" id="riddleAnswer" placeholder="Введите ответ">
+            <button id="submitAnswer">Ответить</button>
+        </div>
+    </div>
+    <script src="eva.js"></script>
+</body>
+</html>
