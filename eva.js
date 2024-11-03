@@ -5,21 +5,20 @@ document.getElementById('createCard').addEventListener('click', function() {
     const riddle = document.getElementById('riddle');
     let imageUrl = '';
 
-    switch (cardType) {
-        case 'love':
-            imageUrl = 'C:\\Users\\senbonzakura\\Desktop\\IT\\JavaScript\\eva\\img\\Снимок экрана 2024-11-03 110855.png';
-            break;
-        case 'friendship':
-            imageUrl = 'C:\\Users\\senbonzakura\\Desktop\\IT\\JavaScript\\eva\\img\\123.png';
-            break;
-        case 'birthday':
-            imageUrl = 'C:\\Users\\senbonzakura\\Desktop\\IT\\JavaScript\\eva\\img\\1234.png';
-            break;
-        default:
-            alert('НЕ ТУДА!!!.');
-            return;
-    }
-
+   switch (cardType) {
+    case 'love':
+        imageUrl = './img/12.png'; // Убедитесь, что файл существует
+        break;
+    case 'friendship':
+        imageUrl = './img/123.png';
+        break;
+    case 'birthday':
+        imageUrl = './img/1234.png';
+        break;
+    default:
+        alert('НЕ ТУДА!!!.');
+        return;
+}
     cardImage.src = imageUrl;
     cardImage.style.display = 'block';
     card.style.display = 'block';
